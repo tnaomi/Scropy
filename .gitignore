@@ -1,0 +1,8 @@
+vir/*
+.vscode/*
+Scropy.code-workspace
+api/__pycache__/*
+api/migrations/*
+scropy/__pycache__/*
+web/__pycache__/*
+web/migrations/*
