@@ -1,0 +1,25 @@
+{% load static %}
+<html lang="en">
+<head>
+</head>
+<body>
+    {%block container%}
+    <div class="container justify-content-center mb-5">
+      <center>
+        <div class="row h-50 d-flex justify-content-center align-items-center w-100" style="padding-left: 20%; padding-top: 0%;">
+          <div class="col-lg-10" style="font-size: 300%;">
+                <form action="{% url 'crops' %}" method="post">
+                    {% csrf_token %}
+                    <input type="text" class="form-input form-select" placeholder="'All' for everything..." autocomplete="name" name="query">
+                </form>
+          </div>
+          <div class="col-lg-1" style="font-size: 500%;">
+            <i class="fa fa-search" ></i>
+          </div>  
+        </div>
+        
+      </div>
+      </center>
+    {%endblock%}
+</body>
+</html>

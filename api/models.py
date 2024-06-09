@@ -58,19 +58,19 @@ class Region(models.Model):
     class continent(models.TextChoices):
         """ Define the `continent` choices for the `Region` class
         """
-        NORTH_AMERICA = "N.A.", _("North America")
-        SOUTH_AMERICA = "S.A.", _("South America")
-        NORTH_EUROPE = "N.E.", _("North Europe")
-        CENTRAL_EUROPE = "C.E.", _("Central Europe")
-        EAST_EUROPE = "E.E.", _("East Europe")
-        SOUTH_EUROPE = "S.E", _("South Europe")
-        MIDDLE_EAST = "Md. E", _("Middle East")
-        AFRICA = "Afr", _("Africa")
+        NORTH_AMERICA = "North America", _("North America")
+        SOUTH_AMERICA = "South America", _("South America")
+        NORTH_EUROPE = "North Europe", _("North Europe")
+        CENTRAL_EUROPE = "Central Europe", _("Central Europe")
+        EAST_EUROPE = "East Europe", _("East Europe")
+        SOUTH_EUROPE = "South Europe", _("South Europe")
+        MIDDLE_EAST = "Middle East", _("Middle East")
+        AFRICA = "Africa", _("Africa")
         ASIA = "Asia", _("Asia")
-        AUSTRALIA = "Aus", _("Australia")
-        OCEANIA = "Oce.", _("Oceania")
+        AUSTRALIA = "Australia", _("Australia")
+        OCEANIA = "Oceania", _("Oceania")
 
-    name = models.CharField(max_length=10, choices=continent,default=continent.AFRICA)  # type: ignore
+    name = models.CharField(max_length=20, choices=continent, unique=True, default=continent.AFRICA)  # type: ignore
 
     class Meta:
         ordering = ['name']
@@ -98,7 +98,7 @@ class Crops(models.Model):
     Args:
         models (_model): _django models_
     """
-    name = models.CharField("Crop name...", max_length=20, blank=False, unique=True)
+    name = models.CharField("Crop name... Singular", max_length=20, blank=False, unique=True)
     genus = models.CharField("Crop genus...", max_length=30, blank=False)
     description = models.TextField(blank=True)
     matures_in = models.FloatField("Matures in...", max_length=5)

@@ -1,0 +1,28 @@
+--2024-06-08 18:31:03--  https://png.pngtree.com/thumb_back/fw800/background/20221108/pngtree-ripe-corn-on-stalk-in-maize-field-farming-outdoors-nature-photo-image_20442962.jpg
+Resolving png.pngtree.com (png.pngtree.com)... 192.5.6.30, 192.33.14.30, 192.26.92.30, ...
+Connecting to png.pngtree.com (png.pngtree.com)|192.5.6.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.33.14.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.26.92.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.31.80.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.12.94.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.35.51.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.42.93.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.54.112.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.43.172.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.48.79.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.52.178.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|192.41.162.30|:443... failed: Connection timed out.
+Connecting to png.pngtree.com (png.pngtree.com)|104.18.2.157|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 266041 (260K) [image/jpg]
+Saving to: ‘pngtree-ripe-corn-on-stalk-in-maize-field-farming-outdoors-nature-photo-image_20442962.jpg’
+
+     0K .......... .......... .......... .......... .......... 19%  106M 0s
+    50K .......... .......... .......... .......... .......... 38%  390K 0s
+   100K .......... .......... .......... .......... .......... 57%  391K 0s
+   150K .......... .......... .......... .......... .......... 76%  233K 0s
+   200K .......... .......... .......... .......... .......... 96% 5.07M 0s
+   250K .........                                             100%  181M=0.5s
+
+2024-06-08 18:57:40 (541 KB/s) - ‘pngtree-ripe-corn-on-stalk-in-maize-field-farming-outdoors-nature-photo-image_20442962.jpg’ saved [266041/266041]
+

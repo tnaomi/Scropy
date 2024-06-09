@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% load static %}
+<html lang="en">
+<head>
+</head>
+<body>
+
+    {% block container %}
+    <div class="container">
+        <h1 class="site-header"><a href="{% url 'home' %}">S C R O P Y</a> </h1>
+        <h2 class="subtitle-header">We have | <b>{{ crop_count }}</b> | <a href="{% url 'crops' %}">crops</a></h2>
+        {% include 'search.html' %}
+    </div>
+    {% endblock %}
+</body>
+</html>

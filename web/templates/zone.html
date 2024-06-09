@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {% block container %}
+    <div class="card">
+    {%if zone%}
+        <h2 class="card card-header"> ZONE {{ zone.name | escape }} </h2>
+        <br><br>
+        <ol class="card">
+            <em class="card-body">- Receives annual rainfall of <b style="font-size: 105%;">{{zone.annual_rainfall}}</b> mm</em>
+            <br><br>
+            <em class="card-body">- Has an average temperature of <b style="font-size: 105%;">{{zone.avg_temp}}</b> °C</em>
+            <br><br>
+            <h4 class="card-title">Districts</h4>
+            <center class="list-group">
+                {%for dist in dists%}
+                <em>- {{ dist.name|capfirst}}</em>
+                <br>
+                {%endfor%}
+            </center>
+            
+        </ol>
+        
+    {%else%}
+        <h3 class="card-body">You have selected an invalid Zone. Does not exist</h3>
+    {%endif%}
+    </div>
+
+    {% endblock %}
+</body>
+</html>

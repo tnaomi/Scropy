@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'images/Favicon.png' %}" rel="icon">
     <link rel="stylesheet" href="{% static 'css/search.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Major+Mono+Display&display=swap" rel="stylesheet">
-    <title>Scropy</title>
+    <link rel="stylesheet" href="{% static 'rest_framework/css/font-awesome-4.0.3.css' %}">
+    <title>S C R O P Y</title>
 </head>
 <body>
-    <main>
+    <div class="container">
         <div class="container">
-            <h1 style="font-size: 800%"><a href="{% url 'home' %}">S C R O P Y</a> </h1>
-            <h2>We have | <b>{{ crop_count }}</b> | <a href="{% url 'crops' %}">crops</a></h2>
-            <div class="search-box">
-                <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
-                <form action="" class="search-form">
-                    <input type="text" placeholder="'All' for everything" id="search" autocomplete="off">
-                </form>
-                <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
-                 xml:space="preserve">
-              <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
-              <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
-            </svg>
-                <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+            <div class="navbar">
+                <li class="navbar-nav nav-tabs">  <a class="btn btn-secondary" href="{% url 'home' %}">Home</a> </li>
+                <li class="navbar-nav nav-tabs">  <a class="btn btn-secondary" href="{% url 'about' %}">About</a> </li>
             </div>
-    
-        </div>    
-        <footer>©️2024 SCROPY by Tadala N. Kapengule</footer>
-    </main>
+        </div>
+        
+        <div class="container-fluid"> 
+            {% block container%}
+            {% endblock %} 
+        </div>
+        
+        <footer class="modal-footer h-50 w-100" style="border: none;">©️{% now "Y" %} <a href="{% url 'home' %}">|<b> SCROPY </b>|</a> by Tadala N. Kapengule</footer>
+    </div>    
 
-    <script src="{% static 'scripts/search.js' %}"></script>
+    <script src="{% static 'scripts/bootstrap.js' %}"></script>
 </body>
 </html>
