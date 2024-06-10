@@ -7,3 +7,4 @@ scropy/__pycache__/*
 web/__pycache__/*
 web/migrations/*
 .env
+web/Scropy.code-workspace
