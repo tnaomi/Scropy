@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '54.81.245.223', '127.0.0.1', '192.168.51.47']
+ALLOWED_HOSTS = ['137.196.0.35', 'localhost', '127.0.0.1']
 
 
 # Application definition
